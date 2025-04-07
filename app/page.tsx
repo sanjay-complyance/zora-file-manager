@@ -69,7 +69,7 @@ interface KB {
   isNewKB: boolean;
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1/management';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbmpheUBjb21wbHlhbmNlLmlvIiwic3ViIjoiNjZiYzgzNTA1Y2FjMjAxMzVlZjMyNTc4IiwiX2lkIjoiNjZiYzgzNTA1Y2FjMjAxMzVlZjMyNTc4IiwiVXNlcklkIjoiZGNmNmEwMzMtY2IyNC00ZmY2LWE4NGYtOWY1NWQ1ZTc2YTI2IiwiSXNWZXJpZmllZCI6dHJ1ZSwiQ2xpZW50SWQiOiI2YzY2NjJhYi1iOGZjLTRjZGQtYWY1NC03ZGFjYjQ3MDM1ZDQiLCJzZXNzaW9uSWQiOiJiNDczMGNjOS0yOGE2LTQ0MDEtYmNhNC0wODE0NjRiNDk1ZDIiLCJleHAiOjE3NDQ1MzQyNjUsImlhdCI6MTc0MTE1MjM5MX0.8ssl0uG_ITfeNiBYuiIFIdFrHBuxQOdQhqjocRzc-ig";
 
 export default function Home() {
