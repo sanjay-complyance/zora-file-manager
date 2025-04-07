@@ -254,7 +254,7 @@ export default function Home() {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop: async (acceptedFiles) => {
       const uploadPromises = acceptedFiles.map(file => {
-        return new Promise((resolve) => {
+        return new Promise<{ data: string; filename: string; invoicing: string; userbase: string }>((resolve) => {
           const reader = new FileReader();
           reader.onload = async () => {
             const base64Data = reader.result as string;
